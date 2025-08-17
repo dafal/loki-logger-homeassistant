@@ -5,13 +5,7 @@
 [![License][license-shield]](LICENSE)
 [![hacs][hacsbadge]][hacs]
 
-**This component will set up the following platforms.**
-
-Platform | Description
--- | --
-`sensor` | Show health status and metrics for your Loki connection.
-
-![example][exampleimg]
+A Home Assistant integration that streams events to Grafana Loki for centralized logging and monitoring.
 
 ## Features
 
