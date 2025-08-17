@@ -1,0 +1,53 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Configure Loki Integration",
+        "description": "Configure your Loki server connection to stream Home Assistant events for centralized logging and monitoring.",
+        "data": {
+          "token": "Bearer Token",
+          "host": "Host",
+          "port": "Port",
+          "ssl": "Use SSL",
+          "verify_ssl": "Verify SSL Certificate",
+          "name": "Instance Name",
+          "batch_size": "Batch Size (1-1000 events)",
+          "batch_timeout": "Batch Timeout (1-60 seconds)",
+          "enable_health_check": "Enable Health Monitoring",
+          "health_check_interval": "Health Check Interval (30-3600 seconds)",
+          "enable_retry": "Enable Retry Logic",
+          "max_retries": "Max Retries (1-10 attempts)",
+          "retry_base_delay": "Base Retry Delay (1-30 seconds)",
+          "retry_max_delay": "Max Retry Delay (60-3600 seconds)"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Failed to connect to Loki server. Please check your host, port, and network connectivity.",
+      "invalid_auth": "Invalid authentication. Please check your bearer token.",
+      "unknown": "Unexpected error occurred. Please check your configuration and try again."
+    },
+    "abort": {
+      "already_configured": "Loki server is already configured with this host and port combination.",
+      "cannot_connect": "Cannot import configuration due to connection issues."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Configure Loki Options",
+        "description": "Fine-tune performance, reliability, and monitoring settings for optimal data streaming.",
+        "data": {
+          "batch_size": "Batch Size (1-1000 events)",
+          "batch_timeout": "Batch Timeout (1-60 seconds)",
+          "enable_health_check": "Enable Health Monitoring",
+          "health_check_interval": "Health Check Interval (30-3600 seconds)",
+          "enable_retry": "Enable Retry Logic",
+          "max_retries": "Max Retries (1-10 attempts)",
+          "retry_base_delay": "Base Retry Delay (1-30 seconds)",
+          "retry_max_delay": "Max Retry Delay (60-3600 seconds)"
+        }
+      }
+    }
+  }
+}

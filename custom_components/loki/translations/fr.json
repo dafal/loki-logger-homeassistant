@@ -1,0 +1,53 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Configurer l'intégration Loki",
+        "description": "Configurez votre connexion au serveur Loki pour diffuser les événements Home Assistant vers un système de journalisation centralisé.",
+        "data": {
+          "token": "Jeton Bearer",
+          "host": "Hôte",
+          "port": "Port",
+          "ssl": "Utiliser SSL",
+          "verify_ssl": "Vérifier le certificat SSL",
+          "name": "Nom de l'instance",
+          "batch_size": "Taille du lot (1-1000 événements)",
+          "batch_timeout": "Délai du lot (1-60 secondes)",
+          "enable_health_check": "Activer la surveillance de santé",
+          "health_check_interval": "Intervalle de vérification de santé (30-3600 secondes)",
+          "enable_retry": "Activer la logique de nouvelle tentative",
+          "max_retries": "Tentatives maximales (1-10 essais)",
+          "retry_base_delay": "Délai de base pour nouvelle tentative (1-30 secondes)",
+          "retry_max_delay": "Délai maximum pour nouvelle tentative (60-3600 secondes)"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Impossible de se connecter au serveur Loki. Veuillez vérifier votre hôte, port et connectivité réseau.",
+      "invalid_auth": "Authentification invalide. Veuillez vérifier votre jeton bearer.",
+      "unknown": "Erreur inattendue. Veuillez vérifier votre configuration et réessayer."
+    },
+    "abort": {
+      "already_configured": "Le serveur Loki est déjà configuré avec cette combinaison d'hôte et de port.",
+      "cannot_connect": "Impossible d'importer la configuration en raison de problèmes de connexion."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Configurer les options Loki",
+        "description": "Ajustez les paramètres de performance, fiabilité et surveillance pour un streaming de données optimal.",
+        "data": {
+          "batch_size": "Taille du lot (1-1000 événements)",
+          "batch_timeout": "Délai du lot (1-60 secondes)",
+          "enable_health_check": "Activer la surveillance de santé",
+          "health_check_interval": "Intervalle de vérification de santé (30-3600 secondes)",
+          "enable_retry": "Activer la logique de nouvelle tentative",
+          "max_retries": "Tentatives maximales (1-10 essais)",
+          "retry_base_delay": "Délai de base pour nouvelle tentative (1-30 secondes)",
+          "retry_max_delay": "Délai maximum pour nouvelle tentative (60-3600 secondes)"
+        }
+      }
+    }
+  }
+}

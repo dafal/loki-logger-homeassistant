@@ -1,0 +1,30 @@
+"""Constants for the Loki integration."""
+
+DOMAIN = "loki"
+CONF_FILTER = "filter"
+CONF_BATCH_SIZE = "batch_size"
+CONF_BATCH_TIMEOUT = "batch_timeout"
+CONF_HEALTH_CHECK_INTERVAL = "health_check_interval"
+CONF_ENABLE_HEALTH_CHECK = "enable_health_check"
+CONF_ENABLE_RETRY = "enable_retry"
+CONF_MAX_RETRIES = "max_retries"
+CONF_RETRY_BASE_DELAY = "retry_base_delay"
+CONF_RETRY_MAX_DELAY = "retry_max_delay"
+
+DEFAULT_HOST = "localhost"
+DEFAULT_PORT = 3100
+DEFAULT_SSL = False
+DEFAULT_NAME = "HASS"
+DEFAULT_BATCH_SIZE = 100
+DEFAULT_BATCH_TIMEOUT = 5
+DEFAULT_HEALTH_CHECK_INTERVAL = 60
+DEFAULT_ENABLE_HEALTH_CHECK = True
+DEFAULT_ENABLE_RETRY = True
+DEFAULT_MAX_RETRIES = 5
+DEFAULT_RETRY_BASE_DELAY = 1
+DEFAULT_RETRY_MAX_DELAY = 300
+
+# Health status constants
+HEALTH_STATUS_HEALTHY = "healthy"
+HEALTH_STATUS_UNHEALTHY = "unhealthy"
+HEALTH_STATUS_UNKNOWN = "unknown"
